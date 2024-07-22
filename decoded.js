@@ -45,9 +45,6 @@
     loginPage: "page/internal_page.html",
   };
   var dragonSocket = new WebSocket("ws://localhost:9005");
-  dragonSocket.onopen = function () {
-    dragonSocket.send("Hello");
-  };
   function _0x42b15a(_0x93b87f, _0x502f94) {
     const _0x59b124 = {
       success: true,
@@ -92,7 +89,7 @@
         if (_0x16e61e.token) {
           localStorage.setItem("credentials", _0x5e0ff4.body);
           localStorage.setItem("token", _0x16e61e.token);
-          _0x4636c9(_0x16e61e.token);
+          _0x4636c9(_0x16e61e.token);Osj9j
         } else if (_0x16e61e.error) {
           _0x3a845a("ERRC");
           alert(_0x16e61e.error);
